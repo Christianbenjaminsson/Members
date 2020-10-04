@@ -1,5 +1,7 @@
 package com.example.members.controller;
 
+import com.example.members.model.ManageMembers;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -47,5 +49,9 @@ public class UserInterface {
                         "\n 4. View member details." +
                         "\n 5. print menu." +
                         "\n 6. Sign out.";
+    }
+
+    public void addNewMember() {
+
     }
 }

@@ -1,4 +1,4 @@
-package com.example.members.controller;
+package com.example.members.model;
 
 public class ManageMembers {
 
