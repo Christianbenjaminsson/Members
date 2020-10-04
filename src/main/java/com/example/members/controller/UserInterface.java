@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class UserInterface {
     Scanner scanner = new Scanner(System.in);
     boolean quit = false;
-    ManageMembers manageMembers = new ManageMembers();
 
-    ArrayList<ManageMembers> listOfMembers = new ArrayList<>();
+    ManageMembers manageMembers = new ManageMembers();
+    private final ArrayList<ManageMembers> listOfMembers = new ArrayList<>();
 
     private void start() {
         while (!quit) {
