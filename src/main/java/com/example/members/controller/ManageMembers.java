@@ -1,4 +1,4 @@
 package com.example.members.controller;
 
-public class ListOfMembers {
+public class ManageMembers {
 }
