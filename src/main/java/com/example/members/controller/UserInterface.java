@@ -23,7 +23,7 @@ public class UserInterface {
                     addNewMember();
                     break;
                 case 2:
-                    ChangeMemberDetails();
+                    changeMemberDetails()
                     break;
                 case 3:
                     removeMemberFromDatabase();
@@ -52,6 +52,18 @@ public class UserInterface {
     }
 
     public void addNewMember() {
+
+    }
+
+    public void changeMemberDetails() {
+
+    }
+
+    public void removeMemberFromDatabase() {
+
+    }
+
+    public void viemSavedMemberDetails() {
 
     }
 }
