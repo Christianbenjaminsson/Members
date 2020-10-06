@@ -51,8 +51,27 @@ public class UserInterface {
                         "\n 6. Sign out.";
     }
 
-    public void addNewMember() {
-
+    public void addNewMember(ManageMembers manageMembers) {
+        System.out.println("Fill in all fields to add a new member.\n");
+        System.out.println("First name:");
+        String memberFname = scanner.nextLine();
+        System.out.println("Last name:");
+        String memberLname = scanner.nextLine();
+        System.out.println("Street:");
+        String memberStreet = scanner.nextLine();
+        System.out.println("Street No:");
+        int memberSteetNo = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Postal code:");
+        int memberZipCode = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("City");
+        String memberTown = scanner.nextLine();
+        System.out.println("Mobile No");
+        int memberPhone = scanner.nextInt();
+        scanner.nextLine();
+        ManageMembers newMember = ManageMembers.createMember(memberFname, memberLname, memberStreet, memberSteetNo,
+                memberZipCode, memberTown, memberPhone);
     }
 
     public void changeMemberDetails() {

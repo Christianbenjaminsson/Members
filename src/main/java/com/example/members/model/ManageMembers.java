@@ -21,6 +21,12 @@ public class ManageMembers {
         this.memberMobileNumber = memberMobileNumber;
     }
 
+    public static ManageMembers createMember(String memberFirstName, String memberLastName, String memberStreet, int memberStreetNumber,
+                                             int memberPostalCode, String memberCity, int memberMobileNumber) {
+        return new ManageMembers(memberFirstName, memberLastName, memberStreet, memberStreetNumber,
+                memberPostalCode, memberCity, memberMobileNumber);
+    }
+
     private String getMemberFirstName() {
         return memberFirstName;
     }
