@@ -29,7 +29,7 @@ public class UserInterface {
                     removeMemberFromDatabase();
                     break;
                 case 4:
-                    viemSavedMemberDetails();
+                    viewSavedMemberDetails();
                     break;
                 case 5:
                     printMenu();
@@ -82,7 +82,16 @@ public class UserInterface {
 
     }
 
-    public void viemSavedMemberDetails() {
-
+    public void viewSavedMemberDetails() {
+        System.out.println("\nMember List");
+        for (int i=0; i<listOfMembers.size(); i++) {
+            System.out.println("First name: " +
+                    listOfMembers.get(i).getMemberFirstName() + ", Last name: " +
+                    listOfMembers.get(i).getMemberLastName() + ", Address: " +
+                    listOfMembers.get(i).getMemberStreet() + " " + listOfMembers.get(i).getMemberStreetNumber() + ", Postal code: " +
+                    listOfMembers.get(i).getMemberPostalCode() + ", City: " +
+                    listOfMembers.get(i).getMemberCity() + ", Mobile No: " +
+                    listOfMembers.get(i).getMemberMobileNumber());
+        }
     }
 }

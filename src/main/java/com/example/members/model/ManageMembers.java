@@ -27,7 +27,7 @@ public class ManageMembers {
                 memberPostalCode, memberCity, memberMobileNumber);
     }
 
-    private String getMemberFirstName() {
+    public String getMemberFirstName() {
         return memberFirstName;
     }
 
