@@ -9,21 +9,22 @@ public class UserInterface {
     Scanner scanner = new Scanner(System.in);
     boolean quit = false;
 
-    ManageMembers manageMembers = new ManageMembers();
+    ManageMembers manageMembers = new ManageMembers("Anders", "Larsson", "Junibacken",
+            7, 12345, "Stockholm", 0701234567);
     private final ArrayList<ManageMembers> listOfMembers = new ArrayList<>();
 
-    private void start() {
+    public void start() {
         while (!quit) {
-            printMenu();
-            System.out.println("\nChoose alternative:");
-            String userInput = scanner.nextLine();
+            System.out.println(printMenu());
+            System.out.print("\nChoose alternative: ");
+            int userInput = scanner.nextInt();
 
             switch (userInput) {
                 case 1:
-                    addNewMember();
+                    addNewMember(manageMembers);
                     break;
                 case 2:
-                    changeMemberDetails()
+                    changeMemberDetails();
                     break;
                 case 3:
                     removeMemberFromDatabase();
