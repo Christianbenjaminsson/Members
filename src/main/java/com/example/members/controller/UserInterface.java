@@ -72,6 +72,7 @@ public class UserInterface {
         scanner.nextLine();
         ManageMembers newMember = ManageMembers.createMember(memberFname, memberLname, memberStreet, memberSteetNo,
                 memberZipCode, memberTown, memberPhone);
+        listOfMembers.add(newMember);
     }
 
     public void changeMemberDetails() {
