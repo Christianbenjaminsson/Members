@@ -81,7 +81,7 @@ public class UserInterface {
     }
 
     public void removeMemberFromDatabase() {
-
+        //Insert code here
     }
 
     public void viewSavedMemberDetails() {
