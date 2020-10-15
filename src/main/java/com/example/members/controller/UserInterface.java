@@ -27,7 +27,9 @@ public class UserInterface {
                     changeMemberDetails();
                     break;
                 case 3:
-                    removeMemberFromDatabase();
+                    System.out.println("Remove member\n" + "First name: ");
+                    String userInputFirstName = scanner.nextLine();
+                    removeMemberFromDatabase(userInputFirstName);
                     break;
                 case 4:
                     viewSavedMemberDetails();
@@ -80,8 +82,19 @@ public class UserInterface {
 
     }
 
-    public void removeMemberFromDatabase() {
 
+    /*TODO
+        Change method for correct output
+     */
+    public void removeMemberFromDatabase(String inputFirstName) {
+        for ( int i=0; i<=listOfMembers.size(); i++ ) {
+            ManageMembers manageMembers = this.listOfMembers.get(i);
+            if (manageMembers.getMemberFirstName().equals(inputFirstName)) {
+                listOfMembers.remove(i);
+            } else {
+                System.out.println("Member is not found");
+            }
+        }
     }
 
     public void viewSavedMemberDetails() {
