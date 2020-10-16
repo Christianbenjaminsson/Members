@@ -21,18 +21,16 @@ public class UserInterface {
 
             switch (userInput) {
                 case 1:
-                    addNewMember(manageMembers);
+                    addNewMember();
                     break;
                 case 2:
                     changeMemberDetails();
                     break;
                 case 3:
-                    System.out.println("Remove member\n" + "First name: ");
-                    String userInputFirstName = scanner.nextLine();
-                    removeMemberFromDatabase(userInputFirstName);
+                    removeMemberFromDatabase();
                     break;
                 case 4:
-                    viewSavedMemberDetails();
+                    viewListSavedMemberDetails();
                     break;
                 case 5:
                     printMenu();
@@ -54,9 +52,8 @@ public class UserInterface {
                         "\n 6. Sign out.";
     }
 
-    public void addNewMember(ManageMembers manageMembers) {
-        System.out.println("Fill in all fields to add a new member.\n");
-        System.out.println("First name:");
+    public void addNewMember() {
+        System.out.println("Fill in all fields to add a new member.\n" + "First name: ");
         String memberFname = scanner.nextLine();
         System.out.println("Last name:");
         String memberLname = scanner.nextLine();
@@ -82,22 +79,17 @@ public class UserInterface {
 
     }
 
-
-    /*TODO
-        Change method for correct output
-     */
-    public void removeMemberFromDatabase(String inputFirstName) {
+    public void removeMemberFromDatabase() {
+        System.out.println("Enter position to remove: ");
+        int positionToRemove = scanner.nextInt();
+        scanner.nextLine();
         for ( int i=0; i<=listOfMembers.size(); i++ ) {
-            ManageMembers manageMembers = this.listOfMembers.get(i);
-            if (manageMembers.getMemberFirstName().equals(inputFirstName)) {
-                listOfMembers.remove(i);
-            } else {
-                System.out.println("Member is not found");
+                if (listOfMembers.get(i))
             }
         }
     }
 
-    public void viewSavedMemberDetails() {
+    public void viewListSavedMemberDetails() {
         System.out.println("\nMember List");
         for (int i=0; i<listOfMembers.size(); i++) {
             System.out.println("First name: " +
