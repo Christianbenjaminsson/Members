@@ -84,8 +84,12 @@ public class UserInterface {
         int positionToRemove = scanner.nextInt();
         scanner.nextLine();
         for ( int i=0; i<=listOfMembers.size(); i++ ) {
-                if (listOfMembers.get(i))
-            }
+                ManageMembers manageMembers = this.listOfMembers.get(i);
+                if (manageMembers.getMemberFirstName().equals(positionToRemove)) {
+                    listOfMembers.remove(i);
+            } else {
+                    System.out.println("Member is not found");
+                }
         }
     }
 
