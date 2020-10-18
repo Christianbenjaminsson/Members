@@ -76,7 +76,7 @@ public class UserInterface {
     }
 
     public void changeMemberDetails() {
-
+        //Insert code here
     }
 
     public void removeMemberFromDatabase() {
