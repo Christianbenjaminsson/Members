@@ -76,7 +76,9 @@ public class UserInterface {
     }
 
     public void changeMemberDetails() {
-        //Insert code here
+        System.out.println("Member position to change: ");
+        int memberPosition = scanner.nextInt();
+        scanner.nextLine();
     }
 
     public void removeMemberFromDatabase() {
