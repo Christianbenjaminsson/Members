@@ -76,9 +76,12 @@ public class UserInterface {
     }
 
     public void changeMemberDetails() {
-        System.out.println("Member position to change: ");
-        int memberPosition = scanner.nextInt();
-        scanner.nextLine();
+        if (listOfMembers.isEmpty()) {
+            System.out.println("There are no registered members\n");
+            return;
+        }
+
+        viewListSavedMemberDetails();
     }
 
     public void removeMemberFromDatabase() {
