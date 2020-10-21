@@ -82,6 +82,14 @@ public class UserInterface {
         }
 
         viewListSavedMemberDetails();
+
+        System.out.println("Which member do you like to change? ");
+        int enterPositionOfSavedMember = Integer.parseInt(scanner.nextLine());
+        while ( enterPositionOfSavedMember > listOfMembers.size()) {
+            System.out.println("You have entered an invalid position");
+            System.out.println("Please enter another number: ");
+            enterPositionOfSavedMember = Integer.parseInt(scanner.nextLine());
+        }
     }
 
     public void removeMemberFromDatabase() {
