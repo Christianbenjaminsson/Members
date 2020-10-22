@@ -90,6 +90,15 @@ public class UserInterface {
             System.out.println("Please enter another number: ");
             enterPositionOfSavedMember = Integer.parseInt(scanner.nextLine());
         }
+
+        System.out.println("\bMenu - change member details" +
+                "\n1. Change first name" +
+                "\n2. Change last name" +
+                "\n3. Change street" +
+                "\n4. Change street No" +
+                "\n5. Change zip code" +
+                "\n6. Change city" +
+                "\n7. Change mobile No");
     }
 
     public void removeMemberFromDatabase() {
