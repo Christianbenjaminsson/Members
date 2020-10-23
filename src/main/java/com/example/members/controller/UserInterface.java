@@ -101,6 +101,11 @@ public class UserInterface {
                 "\n7. Change mobile No");
         System.out.println("Enter your choise: ");
         int positionFromMenuChangeMemberDetails = Integer.parseInt(scanner.nextLine());
+
+        switch (positionFromMenuChangeMemberDetails) {
+            case 1:
+
+        }
     }
 
     public void removeMemberFromDatabase() {
