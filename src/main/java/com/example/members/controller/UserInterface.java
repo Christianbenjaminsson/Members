@@ -99,6 +99,8 @@ public class UserInterface {
                 "\n5. Change zip code" +
                 "\n6. Change city" +
                 "\n7. Change mobile No");
+        System.out.println("Enter your choise: ");
+        int positionFromMenuChangeMemberDetails = Integer.parseInt(scanner.nextLine());
     }
 
     public void removeMemberFromDatabase() {
