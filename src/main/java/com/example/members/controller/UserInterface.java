@@ -104,7 +104,7 @@ public class UserInterface {
 
         switch (positionFromMenuChangeMemberDetails) {
             case 1:
-
+            listOfMembers.get(enterPositionOfSavedMember).setMemberFirstName(setNewFirstNameForSavedMember());
         }
     }
 
@@ -133,5 +133,12 @@ public class UserInterface {
                     listOfMembers.get(i).getMemberCity() + ", Mobile No: " +
                     listOfMembers.get(i).getMemberMobileNumber());
         }
+    }
+
+    public String setNewFirstNameForSavedMember() {
+        System.out.println("Enter new first name: ");
+        String newFirstName = scanner.nextLine();
+
+        return newFirstName;
     }
 }
