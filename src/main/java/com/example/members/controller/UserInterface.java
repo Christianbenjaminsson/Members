@@ -104,7 +104,13 @@ public class UserInterface {
 
         switch (positionFromMenuChangeMemberDetails) {
             case 1:
-            listOfMembers.get(enterPositionOfSavedMember).setMemberFirstName(setNewFirstNameForSavedMember());
+                listOfMembers.get(enterPositionOfSavedMember).setMemberFirstName(setNewFirstNameForSavedMember());
+                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
+                break;
+            case 2:
+                listOfMembers.get(enterPositionOfSavedMember).setMemberLastName(setNewLastNameForSavedMember());
+                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
+                break;
         }
     }
 
@@ -140,5 +146,12 @@ public class UserInterface {
         String newFirstName = scanner.nextLine();
 
         return newFirstName;
+    }
+
+    public String setNewLastNameForSavedMember() {
+        System.out.println("Enter new last name: ");
+        String newLastName = scanner.nextLine();
+
+        return newLastName;
     }
 }
