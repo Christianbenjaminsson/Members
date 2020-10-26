@@ -115,6 +115,9 @@ public class UserInterface {
                 listOfMembers.get(enterPositionOfSavedMember).setMemberStreet(setNewStreetForSavedMember());
                 listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
                 break;
+            case 4:
+                listOfMembers.get(enterPositionOfSavedMember).setMemberStreetNumber(setNewStreetNumber());
+                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
         }
     }
 
@@ -164,5 +167,12 @@ public class UserInterface {
         String newStreet = scanner.nextLine();
 
         return newStreet;
+    }
+
+    public int setNewStreetNumber() {
+        System.out.println("Enter new street no");
+        int newStreetNumber = scanner.nextInt();
+
+        return newStreetNumber;
     }
 }
