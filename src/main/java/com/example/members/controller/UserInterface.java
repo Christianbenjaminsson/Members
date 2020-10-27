@@ -118,6 +118,9 @@ public class UserInterface {
             case 4:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberStreetNumber(setNewStreetNumber());
                 listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
+            case 5:
+                listOfMembers.get(enterPositionOfSavedMember).setMemberZipCode(setNewZipCode());
+                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
         }
     }
 
@@ -142,7 +145,7 @@ public class UserInterface {
                     listOfMembers.get(i).getMemberFirstName() + ", Last name: " +
                     listOfMembers.get(i).getMemberLastName() + ", Address: " +
                     listOfMembers.get(i).getMemberStreet() + " " + listOfMembers.get(i).getMemberStreetNumber() + ", Postal code: " +
-                    listOfMembers.get(i).getMemberPostalCode() + ", City: " +
+                    listOfMembers.get(i).getMemberZipCode() + ", City: " +
                     listOfMembers.get(i).getMemberCity() + ", Mobile No: " +
                     listOfMembers.get(i).getMemberMobileNumber());
         }
@@ -174,5 +177,12 @@ public class UserInterface {
         int newStreetNumber = scanner.nextInt();
 
         return newStreetNumber;
+    }
+
+    public int setNewZipCode() {
+        System.out.println("Enter new zip code: ");
+        int newZipCode = scanner.nextInt();
+
+        return newZipCode;
     }
 }

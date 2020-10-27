@@ -6,17 +6,17 @@ public class ManageMembers {
     private String memberLastName;
     private String memberStreet;
     private int memberStreetNumber;
-    private int memberPostalCode;
+    private int memberZipCode;
     private String memberCity;
     private int memberMobileNumber;
 
     public ManageMembers(String memberFirstName, String memberLastName, String memberStreet, int memberStreetNumber,
-                         int memberPostalCode, String memberCity, int memberMobileNumber) {
+                         int memberZipCode, String memberCity, int memberMobileNumber) {
         this.memberFirstName = memberFirstName;
         this.memberLastName = memberLastName;
         this.memberStreet = memberStreet;
         this.memberStreetNumber = memberStreetNumber;
-        this.memberPostalCode = memberPostalCode;
+        this.memberZipCode = memberZipCode;
         this.memberCity = memberCity;
         this.memberMobileNumber = memberMobileNumber;
     }
@@ -43,8 +43,8 @@ public class ManageMembers {
         return memberStreetNumber;
     }
 
-    public int getMemberPostalCode() {
-        return memberPostalCode;
+    public int getMemberZipCode() {
+        return memberZipCode;
     }
 
     public String getMemberCity() {
@@ -71,8 +71,8 @@ public class ManageMembers {
         this.memberStreetNumber = memberStreetNumber;
     }
 
-    public void setMemberPostalCode(int memberPostalCode) {
-        this.memberPostalCode = memberPostalCode;
+    public void setMemberZipCode(int memberPostalCode) {
+        this.memberZipCode = memberPostalCode;
     }
 
     public void setMemberCity(String memberCity) {
