@@ -126,6 +126,9 @@ public class UserInterface {
                 listOfMembers.get(enterPositionOfSavedMember).setMemberCity(setNewCityForSavedMember());
                 listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
                 break;
+            case 7:
+                listOfMembers.get(enterPositionOfSavedMember).setMemberMobileNumber(setNewMobileNumberForSavedMember());
+                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
         }
     }
 
@@ -196,5 +199,12 @@ public class UserInterface {
         String newCity = scanner.nextLine();
 
         return newCity;
+    }
+
+    public int setNewMobileNumberForSavedMember() {
+        System.out.println("Enter new mobile number: ");
+        int newMobileNumber = scanner.nextInt();
+
+        return newMobileNumber;
     }
 }
