@@ -132,6 +132,8 @@ public class UserInterface {
         }
     }
 
+    //TODO test to add a todo comment
+
     public void removeMemberFromDatabase() {
         System.out.println("Enter position to remove: ");
         int positionToRemove = scanner.nextInt();
