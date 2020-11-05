@@ -18,6 +18,7 @@ public class UserInterface {
             System.out.println(printMenu());
             System.out.print("\nChoose alternative: ");
             int userInput = scanner.nextInt();
+            scanner.nextLine();
 
             switch (userInput) {
                 case 1:
@@ -53,7 +54,7 @@ public class UserInterface {
     }
 
     public void addNewMember() {
-        System.out.println("Fill in all fields to add a new member.\n" + "First name: ");
+        System.out.println("First name:");
         String memberFname = scanner.nextLine();
         System.out.println("Last name:");
         String memberLname = scanner.nextLine();
