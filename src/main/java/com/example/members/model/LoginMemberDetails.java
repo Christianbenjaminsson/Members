@@ -1,2 +1,4 @@
-package com.example.members.model;public class LoginMemberDetails {
+package com.example.members.model;
+
+public class LoginMemberDetails {
 }
