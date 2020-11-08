@@ -20,9 +20,6 @@ public class Main {
             String password = scanner.nextLine();
         }*/
 
-        //UserInterface userInterface = new UserInterface();
-        //userInterface.start();
-
         LoginUserInterface loginUserInterface = new LoginUserInterface("username", "password");
         loginUserInterface.start();
     }
