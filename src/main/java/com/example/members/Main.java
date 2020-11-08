@@ -1,5 +1,6 @@
 package com.example.members;
 
+import com.example.members.controller.LoginUserInterface;
 import com.example.members.controller.UserInterface;
 
 import java.util.Scanner;
@@ -19,7 +20,10 @@ public class Main {
             String password = scanner.nextLine();
         }*/
 
-        UserInterface userInterface = new UserInterface();
-        userInterface.start();
+        //UserInterface userInterface = new UserInterface();
+        //userInterface.start();
+
+        LoginUserInterface loginUserInterface = new LoginUserInterface("username", "password");
+        loginUserInterface.start();
     }
 }
