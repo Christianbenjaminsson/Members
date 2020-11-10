@@ -25,10 +25,14 @@ public class LoginUserInterface {
         System.out.print("Enter password: ");
         String loginPassword = scanner.nextLine();
         LoginMemberDetails useLoginMemberDetails = new LoginMemberDetails("username", "password");
-        if (loginUsername.equals(useLoginMemberDetails.getSavedUserName()) &&
+        
+        //TODO Change if statement to check if user exists and then log in
+        /*if (loginUsername.equals(useLoginMemberDetails.getSavedUserName()) &&
         loginPassword.equals(useLoginMemberDetails.getSaveUserPassword())) {
             UserInterface goToUserInterface = new UserInterface();
             goToUserInterface.start();
-        }
+        }*/
+        UserInterface goToUserInterface = new UserInterface();
+        goToUserInterface.start();
     }
 }
