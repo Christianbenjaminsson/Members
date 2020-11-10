@@ -106,7 +106,6 @@ public class UserInterface {
         switch (positionFromMenuChangeMemberDetails) {
             case 1:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberFirstName(setNewFirstNameForSavedMember());
-                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
                 break;
             case 2:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberLastName(setNewLastNameForSavedMember());
