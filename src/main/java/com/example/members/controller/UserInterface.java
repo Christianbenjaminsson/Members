@@ -109,7 +109,6 @@ public class UserInterface {
                 break;
             case 2:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberLastName(setNewLastNameForSavedMember());
-                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
                 break;
             case 3:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberStreet(setNewStreetForSavedMember());
