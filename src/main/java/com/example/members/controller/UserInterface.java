@@ -112,22 +112,18 @@ public class UserInterface {
                 break;
             case 3:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberStreet(setNewStreetForSavedMember());
-                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
                 break;
             case 4:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberStreetNumber(setNewStreetNumberForSavedMember());
-                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
             case 5:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberZipCode(setNewZipCodeForSavedMember());
-                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
                 break;
             case 6:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberCity(setNewCityForSavedMember());
-                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
                 break;
             case 7:
                 listOfMembers.get(enterPositionOfSavedMember).setMemberMobileNumber(setNewMobileNumberForSavedMember());
-                listOfMembers.add(listOfMembers.get(enterPositionOfSavedMember));
+                break;
         }
     }
 
