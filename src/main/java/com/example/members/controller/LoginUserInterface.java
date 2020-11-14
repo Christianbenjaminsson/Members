@@ -2,6 +2,8 @@ package com.example.members.controller;
 
 import com.example.members.model.LoginMemberDetails;
 
+import java.sql.Connection;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -13,6 +15,9 @@ public class LoginUserInterface {
     boolean quit = false;
     Scanner scanner = new Scanner(System.in);
     private final ArrayList<LoginMemberDetails> saveUserLogin = new ArrayList<>();
+
+    Connection dbConnection = null;
+    Statement processSqlStatement = null;
 
     public LoginUserInterface(String username, String password) {
         this.username = username;
