@@ -1,6 +1,7 @@
 package com.example.members.controller;
 
 import com.example.members.model.LoginMemberDetails;
+import org.w3c.dom.ls.LSOutput;
 
 import java.sql.Connection;
 import java.sql.Statement;
@@ -37,6 +38,10 @@ public class LoginUserInterface {
             UserInterface goToUserInterface = new UserInterface();
             goToUserInterface.start();
         }*/
+
+        System.out.println("Remove this text");
+
+
         UserInterface goToUserInterface = new UserInterface();
         goToUserInterface.start();
     }
