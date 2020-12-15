@@ -39,9 +39,6 @@ public class LoginUserInterface {
             goToUserInterface.start();
         }*/
 
-        System.out.println("Remove this text");
-
-
         UserInterface goToUserInterface = new UserInterface();
         goToUserInterface.start();
     }
